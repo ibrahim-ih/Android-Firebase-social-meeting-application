@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Nearby</item>
+        <item>Messages</item>
+
+        <item>Notification</item>
+        <item>Matched</item>
+        <item />
+        <item>Settings</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_nearby</item>
+        <item>@drawable/ic_messages</item>
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_matched</item>
+        <item>0</item>
+        <item>@drawable/ic_settings</item>
+    </array>
+
+</resources>

@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.ngenious.ibrahim.liny"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+
+    compile('com.twitter.sdk.android:twitter:2.3.2@aar') {
+        transitive = true
+    }
+
+
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'agency.tango.android:material-intro-screen:0.0.5'
+    compile 'com.yarolegovich:sliding-root-nav:1.0.2'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.florent37:diagonallayout:1.0.4'
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.google.firebase:firebase-auth:10.2.4'
+    compile 'com.google.android.gms:play-services-auth:10.2.4'
+    compile 'com.google.android.gms:play-services:10.2.4'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.google.firebase:firebase-storage:10.0.1'
+    compile 'com.google.firebase:firebase-database:10.0.1'
+    compile 'com.firebase:geofire-java:2.1.1'
+    compile 'link.fls:swipestack:0.3.0'
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    compile 'com.google.android.gms:play-services-maps:10.2.4'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

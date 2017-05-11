@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Filter -->
+    <item android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter_list_black_24dp"
+        android:title="Filter"
+        android:showAsAction="ifRoom" />
+    <!-- Edit Destination -->
+    <item android:id="@+id/action_destination"
+        android:icon="@drawable/ic_edit_location_black_24dp"
+        android:title="Edit Destination"
+        android:showAsAction="ifRoom"/>
+
+</menu>

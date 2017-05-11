@@ -1,0 +1,10 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ngenious.ibrahim.liny.profile.fragment.GalleryTabsFragment"
+    android:paddingTop="56dp">
+
+    <include layout="@layout/content_gallery" />
+
+</android.support.design.widget.CoordinatorLayout>

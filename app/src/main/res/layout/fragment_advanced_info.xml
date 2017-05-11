@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ngenious.ibrahim.liny.activity.authentication.fragment.AdvancedInfoFragment"
+    android:id="@+id/advanderinfoLayout">
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/buttonLayout"
+
+    >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:id="@+id/imageViewLayout"
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_centerHorizontal="true">
+
+
+           <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/pictureImageView"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:src="@drawable/test"
+               app:civ_border_color="@color/colorPrimary"
+               app:civ_border_width="2dp" />
+       </LinearLayout>
+        <LinearLayout
+            android:id="@+id/imageButtonLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/imageViewLayout">
+            <ImageButton
+                android:id="@+id/takePicImageButton"
+                android:src="@drawable/ic_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/cameraImageButton"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        <android.support.v4.widget.Space
+            android:id="@+id/spacetwo"
+            android:layout_below="@+id/imageButtonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+<!--Date picker-->
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spacetwo"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth :"
+                android:textSize="16sp"
+                android:textColor="@color/cardview_dark_background"/>
+            <ImageButton
+                android:id="@+id/dateOfBirthImageButton"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_weekly_calendar"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/datePicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+        <android.support.v4.widget.Space
+            android:id="@+id/spaceOne"
+            android:layout_below="@+id/dateLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+        <LinearLayout
+            android:id="@+id/genderLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spaceOne"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You are :"
+                android:textSize="16sp"
+                android:paddingLeft="25dp"
+                android:textColor="@color/cardview_dark_background"/>
+            <!-- Gender Labes -->
+                <RadioGroup
+                    android:id="@+id/genderRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/maleRadioButton"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_man"
+                        android:button="@null"
+                        android:text="male"
+                        android:textColor="@color/transparent"/>
+                    <ImageView
+                        android:id="@+id/manchecked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check_black_24dp"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+
+                    <RadioButton
+                        android:id="@+id/femaleRadioButton"
+                        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_woman"
+                        android:text="female"
+                        android:textColor="@color/transparent"
+                        android:button="@null"/>
+
+                    <ImageView
+                        android:id="@+id/womanchecked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check_black_24dp"
+                        android:visibility="gone"/>
+
+                </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="@color/colorPrimary"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

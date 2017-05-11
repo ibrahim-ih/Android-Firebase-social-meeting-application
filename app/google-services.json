@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "77143766825",
+    "firebase_url": "https://liny-e0286.firebaseio.com",
+    "project_id": "liny-e0286",
+    "storage_bucket": "liny-e0286.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77143766825:android:27dac515f5d26fd0",
+        "android_client_info": {
+          "package_name": "com.ngenious.ibrahim.liny"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77143766825-0chakbf2fjmv4ljqj50da90re98dslof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ngenious.ibrahim.liny",
+            "certificate_hash": "abe0b67efe230428ab0a734512791a5154716bf6"
+          }
+        },
+        {
+          "client_id": "77143766825-gvert8nadlgupbjidv8b9h2p8i8vi0cu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP7uTx6rqr18iYU9pFgGlPqi2Bxdff28k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77143766825-gvert8nadlgupbjidv8b9h2p8i8vi0cu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
