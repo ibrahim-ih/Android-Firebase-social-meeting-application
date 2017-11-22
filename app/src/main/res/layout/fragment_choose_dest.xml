@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_place_picker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ngenious.ibrahim.liny.foursquare.PlacePickerActivity"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardview:cardBackgroundColor="@color/colorBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/snapToPlace"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"/>
+
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:id="@+id/contentGroupLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+    <LinearLayout
+        android:id="@+id/topGroupLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageButton
+            android:id="@+id/foodImageButton"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_food"
+            android:background="@color/colorWhite"/>
+        <ImageButton
+            android:id="@+id/coffeeImageButton"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_coffee"
+            android:background="@color/colorWhite"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsGroupLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <ImageButton
+            android:id="@+id/nidhtlifeImageButton"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_nightlife"
+            android:background="@color/colorWhite"/>
+        <ImageButton
+            android:id="@+id/funImageButton"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_fun"
+            android:background="@color/colorWhite"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/coffeeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"/>
+    <!--    <com.skyfishjy.library.RippleBackground
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/placeSearch"
+            app:rb_color="@color/colorAccent"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_duration="3000"
+            app:rb_scale="6">
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/centerImage"
+                android:src="@drawable/ic_placeholder"/>
+        </com.skyfishjy.library.RippleBackground>-->
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contentLayout"
+    tools:context="com.ngenious.ibrahim.liny.profile.PicCtrlActivity">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar" android:id="@+id/main_toolbar"/>
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/img_secondside"
+        />
+<LinearLayout
+    android:id="@+id/actionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="114dp"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom|center"
+    android:gravity="center"
+    android:weightSum="1">
+        <ImageButton
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_gallery"
+            android:layout_weight="0.20"
+            />
+        <ImageButton
+            android:id="@+id/capture"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_photo_camera"
+            android:layout_weight="0.23"
+            />
+</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+
+        />
+</RelativeLayout>

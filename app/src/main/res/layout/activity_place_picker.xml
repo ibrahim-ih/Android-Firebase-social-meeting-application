@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_place_picker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ngenious.ibrahim.liny.foursquare.PlacePickerActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/toolbar" android:id="@+id/main_toolbar"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabsplacepicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerplacepicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_above="@+id/tabsplacepicker"
+        android:layout_below="@id/main_toolbar"
+        />
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
